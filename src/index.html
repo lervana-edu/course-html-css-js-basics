@@ -138,5 +138,15 @@
             </div>
         </div>
     </footer>
+
+    <script src="./scripts/timer.js"></script>
+    <script>
+        function updateTimer() {
+            const item = document.getElementById("jumbotron-timer");
+            item.textContent = getCurrentTime();
+        }
+
+        setInterval(updateTimer, 1000);
+    </script>
 </body>
 </html>
