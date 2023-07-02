@@ -5,7 +5,7 @@
     <title>Veterinary Clinic Scheduler</title>
     <link rel="stylesheet" href="./styles/main.css">
 </head>
-<body>
+<body onload="main()">
     <div id="header-placeholder"></div>
     <div id="jumbotron-placeholder"></div>
     <main>
@@ -20,32 +20,7 @@
                 bibendum elementum bibendum sit amet metus. In hac habitasse platea dictumst. Nunc dolor risus,
                 efficitur at dapibus non, bibendum et justo. Proin pretium turpis sagittis vestibulum blandit.
             </article>
-            <div id="offer-items">
-                <div class="offer-item">
-                    <div>Img 1</div>
-                    <p>Item 1</p>
-                </div>
-                <div class="offer-item">
-                    <div>Img 2</div>
-                    <p>Item 2</p>
-                </div>
-                <div class="offer-item">
-                    <div>Img 3</div>
-                    <p>Item 3</p>
-                </div>
-                <div class="offer-item">
-                    <div>Img 4</div>
-                    <p>Item 4</p>
-                </div>
-                <div class="offer-item">
-                    <div>Img 5</div>
-                    <p>Item 5</p>
-                </div>
-                <div class="offer-item">
-                    <div>Img 6</div>
-                    <p>Item 6</p>
-                </div>
-            </div>
+            <div id="offer-items-placeholder"></div>
         </section>
         <header>
             <h2>About us</h2>
@@ -111,21 +86,12 @@
     </main>
     <div id="footer-placeholder"></div>
 
-    <script src="./scripts/timer.js"></script>
     <script src="./components/header.js"></script>
     <script src="./components/jumbotron.js"></script>
     <script src="./components/footer.js"></script>
-    <script>
-        function updateTimer() {
-            const item = document.getElementById("jumbotron-timer");
-            item.textContent = getCurrentTime();
-        }
-
-        setInterval(updateTimer, 1000);
-
-        renderHeader("header-placeholder", "assets/logo.png", "VetMed logo");
-        renderJumbotron("jumbotron-placeholder", "assets/cat.png", "Black cat");
-        renderFooter("footer-placeholder", "assets/logo.png");
-    </script>
+    <script src="./components/offer-item.js"></script>
+    <script src="./scripts/timer.js"></script>
+    <script src="./scripts/render-element.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>

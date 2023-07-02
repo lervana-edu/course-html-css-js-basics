@@ -4,6 +4,7 @@
 @import "header.css";
 @import "jumbotron.css";
 @import "footer.css";
+@import "offer-item.css";
 
 * {
     box-sizing: border-box;
@@ -29,31 +30,16 @@ main {
     gap: 1rem;
     max-width: 1200px;
     margin: 0 auto;
-    padding-bottom: 3rem;
+    padding: 0 3rem 3rem 3rem;
 }
 
 main h2 {
     margin-top: 2rem;
 }
 
-#offer-section {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-#offer-items {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.offer-item {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
+#offer-section article {
+    line-height: 1.5rem;
+    text-align: justify;
 }
 
 #about-us-section {
